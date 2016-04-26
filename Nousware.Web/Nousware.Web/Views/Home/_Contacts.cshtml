@@ -1,0 +1,72 @@
+﻿<!-- Contact
+  ==============================-->
+<section id="contact" class="contact-section transparent" data-type="background" data-parallax="yes" data-src="/Content/assets/images/contact-map.jpg">
+    <div class="overlay section-padding">
+        <div class="container">
+            <h1 class="section-title text-center text-uppercase wow fadeInUp" data-wow-delay="0.2s">Get In <span>Touch</span></h1>
+            <div class="section-description text-center wow fadeInUp" data-wow-delay="0.5s">
+                Our employees are not only professionals in their field, but they also have ability to listen and interpret the needs of each client with creativity, sensitivity and emotion. 
+            </div><!-- /.section-description -->
+            <div class="top-padding-80"></div>
+            <div class="col-md-8 contact-info-map wow fadeInUp" data-wow-delay="0.8s">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="contact-details">
+                            <h3 class="contact-title text-uppercase">Get In Touch</h3>
+                            <ul class="contact-items">
+                                <li class="fa-home">Russia, Novokuznetsk, Tolyatti 46a</li>
+                                <li class="fa-phone">+7 923 620 85 57</li>
+                                <li class="fa-envelope">info@nous-ware.com</li>
+                                <div class="top-padding-45"></div>
+                            </ul><!-- /.contact-item -->
+                            <h3 class="contact-title text-uppercase">Connect With Us</h3>
+                            <ul class="social-profiles">
+                                <a href="https://www.linkedin.com/in/dmgoncharov"><img src="/Content/assets/images/LinkedIn_Logo.png"/></a>
+                                
+                            </ul>
+                        </div><!-- /.contact-details -->
+                    </div><!-- /.row -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6"> 
+                    <div class="row">
+
+                        <div id="google-maps">
+
+                        </div><!-- /#google-maps -->
+                    </div><!-- /.row -->
+                </div><!-- /.col-md-6 -->
+            </div><!-- /.col-md-8 -->
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="1.1s">
+                <div class="contact-container">
+                    <h3 class="contact-title text-uppercase">Quick Message</h3>
+                    <form id="sendform" action="/" class="contact-form" method="post">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="E-Mail">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <div id="form-message" style="display:none">Your message has been sent</div>
+                        <input type="submit" name="submit" id="submit" value="Send">
+                    </form><!-- /.contact-form -->
+                </div><!-- /.contact-form -->
+            </div><!-- /.col-md-4 -->
+
+        </div><!-- /.container -->
+    </div><!-- /.overlay -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sendform").submit(function (event) {
+                $.ajax({
+                    type: "POST",
+                    url: "/",
+                    data: { name: $("#name").val(), email: $("#email").val(), message: $("#message").val() }
+                })
+                .done(function () {
+                    $('#form-message').show();
+                    $('#submit').hide();
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+</section><!-- /#contact -->
+
+

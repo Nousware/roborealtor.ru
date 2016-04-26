@@ -1,0 +1,344 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Nousware</title>
+    @Styles.Render("~/Content/site")
+    @Scripts.Render("~/Content/dependencies/jquery/dist/jquery.js")
+    @Scripts.Render("~/Content/dependencies/bootstrap/dist/js/bootstrap.js")
+    @Scripts.Render("~/Content/dependencies/swiper/dist/js/swiper.js")
+    @Scripts.Render("~/Content/dependencies/formstone/dist/js/core.js")
+    @Scripts.Render("~/Content/dependencies/formstone/dist/js/transition.js")
+    @Scripts.Render("~/Content/dependencies/formstone/dist/js/lightbox.js")
+    @Scripts.Render("http://maps.google.com/maps/api/js?sensor=false&amp;language=en")
+    @Scripts.Render("~/Content/dependencies/gmap3/dist/gmap3.min.js")
+    @Scripts.Render("~/Content/dependencies/wow.js/dist/wow.js")
+    @Scripts.Render("~/Content/assets/javascripts/app.js")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    @Scripts.Render("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+
+
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic|Montserrat:400,700">
+    <style type="text/css">
+    </style>
+
+
+</head>
+
+<body class="blog">
+    <div id="preloader">
+        <div id="loader">
+            <div class="loader-inner ball-scale-multiple"><div></div><div></div><div></div></div>
+        </div><!-- /#loader -->
+    </div><!-- /#preloader -->
+
+    <nav id="navigation" class="navigation-style-2">
+        <div class="container">
+            <div class="nav-header">
+ 
+                <div id="nav-trigger" class="nav-trigger style-2">
+                    <a href="#"><i class="fa fa-bars"></i></a>
+                </div><!-- /#nav-trigger -->
+            </div><!-- /.nav-header -->
+            <ul class="site-navigation">
+                @*<li><a href="#"><i class="fa fa-home"></i>Home</a></li>*@
+                <li><a href="/home/#feature2"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="/home/#tech"><i class="fa fa-download"></i>Technologies</a></li>
+                <li><a href="/home/#team"><i class="fa fa-file-image-o"></i>Team</a></li>
+                @*<li><a href="#screenshots"><i class="fa fa-file-image-o"></i>Screenshots</a></li>*@
+                <li><a href="/home/#pricng"><i class="fa fa-file-image-o"></i>Price</a></li>
+                <li><a href="/home/#contact"><i class="fa fa-file-image-o"></i>Contacts</a></li>
+                @*<li class="has-submenu">
+                        <a href="#"><i class="fa fa-envelope-o"></i>Contact Us</a>
+                        <ul class="submenu">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            <li><a href="#">Sub Item 3</a></li>
+                        </ul>
+                    </li>*@
+                @*<li><a href="#">News</a></li>*@
+            </ul><!-- /.site-navigation -->
+        </div><!-- /.container -->
+    </nav><!-- /#navigation -->
+    <section id="blog-header" class="aw-page-header transparent" data-type="background" data-parallax="yes" data-speed="50" data-src="/content/assets/images/download-bg.jpg">
+        <div class="overlay section-padding">
+            <div class="container">
+                <div class="aw-header-content">
+                    <h1 class="text-uppercase text-center">Get us</h1>
+                </div><!-- /.aw-header-content -->
+            </div><!-- /.container -->
+        </div><!-- /.overlay -->
+    </section><!-- /#blog-header -->
+
+    <div id="blog-container" class="top-padding-60 full-width">
+        <div class="container">
+
+            <!-- Page Content
+            ==============================-->
+
+            <div class="col-lg-6 wow fadeInUp top-padding-80" data-wow-delay="1.1s">
+                <div class="cont-container">
+                    <h3 class="contact-title text-uppercase">Enter your information</h3>
+                    <form action="index.php" class="contact-form">
+                        <input type="text" name="name" id="name" placeholder="NAME">
+                        <input type="email" name="email" id="email" placeholder="E-MAIL">
+                        <input type="phone number" name="phone number" id="email" placeholder="PHONE NUMBER">
+                        <textarea name="message" id="message" placeholder="YOUR MESSAGE"></textarea>
+                        <input type="submit" name="submit" id="submit" value="GET IT">
+                    </form><!-- /.contact-form -->
+                </div><!-- /.contact-form -->
+            </div><!-- /.col-md-4 -->
+
+            <input type="hidden" id="regPage" value="1"/>
+
+            <div id="screenshots-carousel" class="screenshots-carousel col-md-5 bottom-right top-padding-100 wow fadeIn" data-wow-delay="0.8s" data-screenshot="carousel">
+
+                <div id="screenshots-carousel-content" class="swiper-container" data-carousel="content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide col-md-12 screenshot-item">
+                                <div class="extra-padding">
+                                    <div class="pricing-plan transparent-bg">
+                                        <div class="head">
+                                            <div class="plan-name">
+                                                Easy
+                                            </div><!-- /.plan-name -->
+                                            <div class="plan-price">
+                                                <span class="currency">€</span>
+                                                990
+                                            </div><!-- /.plan-price -->
+                                        </div><!-- /.head -->
+                                        <div class="content">
+                                            <ul class="plan-feature">
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Developer per project 40h/week
+                                                </li>
+                                                <li class="disable">
+                                                    <i class="fa fa-close"></i>
+                                                    Designer 20h/week
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    5h project management - sprint
+                                                </li>
+                                                <li class="disable">
+                                                    <i class="fa fa-close"></i>
+                                                    Front-end developmetn 40h
+                                                </li>
+                                                <li class="disable">
+                                                    <i class="fa fa-close"></i>
+                                                    Back-end development 40h
+                                                </li>
+                                                <li class="disable">
+                                                    <i class="fa fa-close"></i>
+                                                    Business testing 10h/week
+                                                </li>
+                                            </ul><!-- /.plan-feature -->
+                                        </div><!-- /.content -->
+                                    </div><!-- /.pricing-plan -->
+                                </div><!-- /.extra-padding -->
+                    
+                      
+                    </div>
+                        <div class="swiper-slide col-md-12 screenshot-item">
+                            <div class="extra-padding">
+                                <div class="pricing-plan transparent-bg">
+                                    <div class="head">
+                                        <div class="plan-name">
+                                            Medium
+                                        </div><!-- /.plan-name -->
+                                        <div class="plan-price">
+                                            <span class="currency">€</span>
+                                            1190
+                                        </div><!-- /.plan-price -->
+                                    </div><!-- /.head -->
+                                    <div class="content">
+                                        <ul class="plan-feature">
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                Developer per project 40h/week
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                Designer 20h/week
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                5h project management - sprint
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-close"></i>
+                                                Front-end developmetn 40h
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-close"></i>
+                                                Back-end development 40h
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-close"></i>
+                                                Business testing 10h/week
+                                            </li>
+                                        </ul><!-- /.plan-feature -->
+                                    </div><!-- /.content -->
+                                </div><!-- /.pricing-plan -->
+                            </div><!-- /.extra-padding -->
+
+
+                        </div>
+                        <div class="swiper-slide col-md-12 screenshot-item">
+                            <div class="extra-padding">
+                                <div class="pricing-plan transparent-bg">
+                                    <div class="head">
+                                        <div class="plan-name">
+                                            Full set
+                                        </div><!-- /.plan-name -->
+                                        <div class="plan-price">
+                                            <span class="currency">€</span>
+                                            1990
+                                        </div><!-- /.plan-price -->
+                                    </div><!-- /.head -->
+                                    <div class="content">
+                                        <ul class="plan-feature">
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Developer per project 40h/week
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Designer 20h/week
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                5h project management - sprint
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                Front-end developmetn 40h
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                Back-end development 40h
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i>
+                                                Business testing 10h/week
+                                            </li>
+                                        </ul><!-- /.plan-feature -->
+                                    </div><!-- /.content -->
+                                </div><!-- /.pricing-plan -->
+                            </div><!-- /.extra-padding -->
+
+
+                        </div>
+                        <div class="swiper-slide col-md-12 screenshot-item">
+                            <div class="extra-padding">
+                                <div class="pricing-plan transparent-bg">
+                                    <div class="head">
+                                        <div class="plan-name">
+                                            Custom
+                                        </div><!-- /.plan-name -->
+                                     
+                                    </div><!-- /.head -->
+                                    <div class="content">
+                                        <ul class="plan-feature">
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Developer per project 40h/week
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Designer 20h/week
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                5h project management - sprint
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Front-end developmetn 40h
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Back-end development 40h
+                                            </li>
+                                            <li class="disable">
+                                                <i class="fa fa-check"></i>
+                                                Business testing 10h/week
+                                            </li>
+                                        </ul><!-- /.plan-feature -->
+                                    </div><!-- /.content -->
+                                </div><!-- /.pricing-plan -->
+                            </div><!-- /.extra-padding -->
+
+
+                        </div>
+
+                    </div><!-- /.swiper-wrapper -->
+                </div><!-- /.swiper-container -->
+                <!-- Carousel Pagination -->
+                <div id="screenshots-carousel-pagination" class="bullet-pagination" data-carousel="pagination"></div>
+                <!-- Carousel Navigation -->
+                <div id="screenshots-carousel-nav-prev" class="arrow-control prev cut-off" data-carousel="prev"></div>
+                <div id="screenshots-carousel-nav-next" class="arrow-control next cut-off" data-carousel="next"></div>
+            </div>
+
+            
+
+            
+        </div><!-- /.container -->
+</div><!-- /#blog-container -->
+<h4 class="top-padding-20 section-title2 text-center description1">You can also contact us at info@nous-ware.com</h4>
+<h4 class="section-title1 text-center description1">Novokuznetsk, Tolyatti 46a <span>+7 923 620 85 57</span></h4>
+<div class="top-padding-50"></div>
+    <!-- Footer
+    ==============================-->
+    <section id="footer" class="footer-section">
+        <div class="container">
+            <p class="copyright-info text-center">Copyright &copy; 2016 <a href="#">Nousware</a> All Rights Reserves.</p><!-- /.copyright-info -->
+        </div><!-- /.container -->
+    </section><!-- /#footer -->
+    <!-- Project Scripts
+    =====================================-->
+    <script src="dependencies/jquery/dist/jquery.js"></script>
+    <script src="dependencies/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="dependencies/swiper/dist/js/swiper.js"></script>
+    <script src="dependencies/formstone/dist/js/core.js"></script>
+    <script src="dependencies/formstone/dist/js/transition.js"></script>
+    <script src="dependencies/formstone/dist/js/lightbox.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="dependencies/gmap3/dist/gmap3.min.js"></script>
+    <script src="dependencies/wow.js/dist/wow.js"></script>
+    <script src="assets/javascripts/app.js"></script>
+    <script>
+    $('#google-maps').gmap3({
+      map:{
+        options:{
+          center: [23.739283, 90.389137],
+          zoom: 15
+        }
+      },
+      marker:{
+        latLng:[23.739283, 90.389137],
+        options: {
+         icon: new google.maps.MarkerImage(
+           "assets/images/map-marker.png",
+           new google.maps.Size(48, 60, "px", "px")
+           )
+       }
+     }
+   });
+
+    // scrollReveal Init
+    if (screen.width > 966) {
+      $( document ).ready(function() {
+        new WOW().init();
+      });
+    }
+
+    </script>
+
+</body>
+</html>

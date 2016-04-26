@@ -1,0 +1,123 @@
+﻿<!-- Logos
+ ==============================-->
+<section id="logo" class="clients-logo-section cut-off" data-background="gray">
+    <div class="container">
+        <div class="logo-items">
+            <div class="item wow fadeInRight" data-wow-delay="0.3s">
+                <a block-number="0" class="hide-block">
+                    <img src="/Content/assets/images/MongoDB-Logo.png" alt="Logo 2">
+                </a>
+            </div><!-- /.item -->
+            <div class="item wow fadeInRight" data-wow-delay="0.3s">
+                <a block-number="1" class="hide-block">
+                    <img src="/Content/assets/images/AngularJS_logo.png" alt="Logo 2">
+                </a>
+            </div><!-- /.item -->
+            <div class="item wow fadeInRight" data-wow-delay="0.2s">
+                <a block-number="2" class="hide-block">
+                    <img src="/Content/assets/images/logo/1.png" alt="Logo 1">
+                </a>
+            </div><!-- /.item -->
+            <div class="item wow fadeInRight" data-wow-delay="0.3s">
+                <a block-number="3" class="hide-block">
+                    <img src="/Content/assets/images/HTML5_Logo.png" alt="Logo 2">
+                </a>
+            </div><!-- /.item -->
+            <div class="item wow fadeInRight" data-wow-delay="0.3s">
+                <a block-number="4" class="hide-block">
+                    <img src="/Content/assets/images/logo/2.png" alt="Logo 2">
+                </a>
+            </div><!-- /.item -->
+            <div class="item wow fadeInRight" data-wow-delay="0.3s">
+                <a block-number="5" class="hide-block">
+                    <img src="/Content/assets/images/ravendb_logo2.png" alt="Logo 2">
+                </a>
+            </div><!-- /.item -->       
+            <div class="item wow fadeInRight" data-wow-delay="0.3s">
+                <a block-number="6" class="hide-block">
+                    <img src="/Content/assets/images/MicrosoftSQLServer.png" alt="Logo 2">
+                </a>
+            </div><!-- /.item -->
+           
+            <p class="infoblock padding-60" id="block0">
+                MongoDB (from humongous) is a cross-platform document-oriented database. Classified as a NoSQL
+                database, MongoDB eschews the traditional table-based relational database structure in favor
+                of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration
+                of data in certain types of applications easier and faster. MongoDB is developed by MongoDB Inc.
+                and is published as free and open-source software under a combination of the GNU Affero General
+                Public License and the Apache License. As of July 2015, MongoDB is the fourth most popular type
+                of database management system, and the most popular for document stores.
+            </p>
+            <p class="infoblock padding-60" id="block1">
+                AngularJS (commonly referred to as "Angular" or "Angular.js") is an open-source web application
+                framework mainly maintained by Google and by a community of individuals and corporations to address
+                many of the challenges encountered in developing single-page applications. It aims to simplify both
+                the development and the testing of such applications by providing a framework for client-side model–view–controller
+                (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.
+            </p>
+            <p class="infoblock padding-60" id="block2">
+                MVVM is a variation of Martin Fowler's Presentation Model design pattern. Like Fowler's Presentation Model,
+                MVVM abstracts a view's state and behavior. However, whereas the Presentation Model abstracts a view
+                (i.e., creates a view model) in a manner not dependent on a specific user-interface platform, MVVM was developed
+                by Microsoft architects Ken Cooper and Ted Peters specifically to simplify event-driven programming of user
+                interfaces—by exploiting features of Windows Presentation Foundation (WPF) (Microsoft's .NET graphics system)
+                and Silverlight (WPF's Internet application derivative)
+            </p>
+            <p class="infoblock padding-60" id="block3">
+                HTML5 is a markup language used for structuring and presenting content
+                on the World Wide Web. It is the fifth and current version of the HTML standard.
+            </p>
+            <p class="infoblock padding-60" id="block4">
+                The ASP.NET MVC is a web application framework developed by Microsoft, which implements the model–view–controller (MVC) pattern.
+                It is open-source software, apart from the ASP.NET Web Forms component which is proprietary.
+                In the later versions of ASP.NET, ASP.NET MVC, ASP.NET Web API, and ASP.NET Web Pages (a platform using only Razor pages) will merge into a unified MVC 6. The project is called ASP.NET vNext.
+            </p>
+            <p class="infoblock padding-60" id="block5">
+                RavenDB is a new open source document database for .NET. If you have never worked with a document database before,
+                the simplest way to think about it is to imagine serializing your objects and storing them on the hard drive where
+                the app is. If you stored it using the key or whatever most common lookup method you might use, it would be quite
+                easy to retrieve your entire object without having to map to and from columns and rows in a SQL database.
+            </p>
+            <p class="infoblock padding-60" id="block6">
+                Microsoft SQL Server is a relational database management system developed by Microsoft.
+                As a database server, it is a software product with the primary function of storing and
+                retrieving data as requested by other software applications which may run either on the
+                same computer or on another computer across a network (including the Internet).
+            </p>
+
+        </div><!-- /.logo-items -->
+    </div><!-- /.container -->
+
+
+    <script>
+        $(document).ready(function () {
+          $(".infoblock").hide();
+          $(".hide-block").click(function () {
+              $(".infoblock").slideUp("slow");
+              $(".hide-block").removeClass("active-block");
+              $(this).addClass("active-block");
+              if ($(this).attr('block-number') == 0) {
+                  $("#block0").slideToggle("slow");
+              } else if ($(this).attr('block-number') == 1) {
+                  $("#block1").slideToggle("slow");
+              }
+              else if ($(this).attr('block-number') == 2) {
+                  $("#block2").slideToggle("slow");
+              }
+              else if ($(this).attr('block-number') == 3) {
+                  $("#block3").slideToggle("slow");
+              }
+              else if ($(this).attr('block-number') == 4) {
+                  $("#block4").slideToggle("slow");
+              }
+              else if ($(this).attr('block-number') == 5) {
+                  $("#block5").slideToggle("slow");
+              }
+              else if ($(this).attr('block-number') == 6) {
+                  $("#block6").slideToggle("slow");
+              }
+	        });
+	      });
+    </script>
+ 
+</section><!-- /#logo -->
