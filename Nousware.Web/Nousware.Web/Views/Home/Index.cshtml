@@ -20,7 +20,10 @@
     @Scripts.Render("~/Content/dependencies/gmap3/dist/gmap3.min.js")
     @Scripts.Render("~/Content/dependencies/wow.js/dist/wow.js")
     @Scripts.Render("~/Content/assets/javascripts/app.js")
+    @Scripts.Render("~/Content/assets/javascripts/icheck.js")
+    @Scripts.Render("~/Content/assets/javascripts/icheck.min.js")
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="~/Content/assets/stylesheets/flat/green.css" rel="stylesheet">
     @*@Scripts.Render("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")*@
     
     
@@ -37,10 +40,10 @@
                 @Html.Partial("_first_block")
                 @*@Html.Partial("_Soft_world")*@
                 @Html.Partial("_Features")
-                @Html.Partial("_Screenshot")
-                @Html.Partial("_Team")
-                @Html.Partial("_Tech")
-                @Html.Partial("_Logos")
+                @Html.Partial("_System")
+                @Html.Partial("_Video")
+                @Html.Partial("_Counter")
+                @Html.Partial("_Payment")
                 @*@Html.Partial("_Price")*@
  
                 @Html.Partial("_Contacts")
@@ -78,33 +81,36 @@
     }
 
 </script>
-    <script type="text/javascript">
+@*<script type="text/javascript">
 
-$(function() {
+    $(function() {
 
-$(window).scroll(function() {
+        $(window).scroll(function() {
 
-if($(this).scrollTop() != 0) {
+            if ($(this).scrollTop() != 0) {
 
-$('#toTop').fadeIn();
+                $('#toTop').fadeIn();
 
-} else {
+            } else {
 
-$('#toTop').fadeOut();
+                $('#toTop').fadeOut();
 
-}
+            }
 
-});
+        });
 
-$('#toTop').click(function() {
+        $('#toTop').click(function() {
 
-$('body,html').animate({scrollTop:0},800);
+            $('body,html').animate({ scrollTop: 0 }, 800);
 
-});
+        });
 
-});
+    });
 
-    </script>
-    <DIV ID="toTop"> <img src="/content/assets/images/up.png"/> </DIV>
+</script>*@
+
+@*<div ID="toTop"> <img src="/content/assets/images/up.png"/>
+</div>*@
+
 </body>
 </html>

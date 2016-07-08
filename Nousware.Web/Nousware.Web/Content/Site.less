@@ -8,8 +8,306 @@
 @import "assets/stylesheets/app.css";
 
 
-body.nousware-body {
+/*@font-face {
+    font-family: Intro;
+    src: /Content/assets/Font/INTRO.OTF;
+}*/
 
+.logo-icon-lion{
+    background-color: #1ab394;
+    float: left;
+    height: 70px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    padding: 20px 0 0;
+    text-align: center;
+    width: 70px;
+}
+.btn-label{
+    background-color: #1ab394;
+    border-radius: 0 0 7px 7px;
+    color: #fff;
+    margin: 0 auto;
+}
+.btn-label-cent{
+    margin: 0 auto;
+    width: 179px;
+}
+.video-check{
+    color: #1ab394;
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+.video-warn{
+    background-color: white;
+    border-top: 2px solid #1ab394;
+    display: table;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 40px auto 0;
+    padding: 15px;
+    width: 77%;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(0deg, rgba(21, 147, 122, 1) 0, rgba(26, 178, 147, 1) 100%);
+    background: linear-gradient(90deg, rgba(21, 147, 122, 1) 0, rgba(26, 178, 147, 1) 100%);
+    cursor: pointer;
+    margin-top: -14px;
+    box-shadow: 0px 1px 2px #222222;
+}
+
+.range-cash{
+    float: left;
+    padding: 10px;
+    width: 65%;
+}
+.form-control-1{
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 70px;
+    float: left;
+}
+.form-contacts{
+    background-color: white;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.ctrl-block{
+    display: table;
+    margin: 0 auto;
+    height: 100px;
+    width: 65%;
+}
+.btn-control{
+    background-color: #1ab394;
+    border-color: #1ab394;
+    color: #fff;
+    float: left;
+    font-weight: 900;
+    padding: 7px;
+    width: 20px;
+}
+ .pricing-plan > .content-2 {
+    margin: 0 auto;
+    padding: 25px;
+    width: 60%;
+    border-top: 0 none;
+}
+ .sys-desc{
+    border-color: #fff;
+    border-style: solid none;
+    border-width: 1px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    display: table;
+ }
+ .section-title-1 {
+color: #fff;
+}
+ .section-description-1{
+     color: #c5c6c8;
+ }
+ .video-flex{
+     margin: 0 auto;
+     display: table;
+ }
+.section-title-1 > span {
+color: #1ab394;
+}
+.top-10{
+    padding-top: 10px;
+}
+.price-warn{
+    background-color: #fff;
+    border-top: 5px solid #e26c2d;
+    font-size: 10px;
+    line-height: 14px;
+    margin: 10px 0;
+    padding: 15px;
+    float: left;
+}
+.sys-warn{
+    background-color: white;
+    border-left: 5px solid #1ab394;
+    display: table;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 40px auto 0;
+    padding: 15px;
+    width: 60%;
+}
+.price-pic{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    height: 290px;
+}
+.system-pic{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    height: 200px;
+}
+.sys-width{
+    float: left;
+    width: 55%;
+}
+.sys-width-1{
+    float: right;
+    width: 55%;
+}
+.sys-width-2{
+    width: 55%;
+}
+.count-customer{
+    float: left;
+    width: 25%;
+}
+.btn-buy{
+    background-color: #1ab394;
+    border-radius: 7px;
+    color: white;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding: 15px 53px;
+}
+.contacts-forms {
+        display: inline-block;
+        padding: 20px 5px;
+        float: left;
+    }
+.warn-icon{
+    color: #e26c2d;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.price-img{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+@media (max-width: 736px) {
+    #navigation.navigation-style-2 {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .ctrl-block{
+    height: auto;
+    width: 100%;
+}
+    .count-customer{
+    width: 100%;
+}
+    .price-warn{
+    float: unset;
+}
+    .video-flex{
+     display: flex;
+ }
+    .video-warn{
+        font-size: 12px;
+        line-height: 16px;
+    width: 100%;
+}
+    .sys-warn{
+    line-height: 16px;
+    font-size: 12px;
+    width: 100%;
+}
+    .sys-desc{
+        font-size: 12px;
+        margin-bottom: 20px;
+        line-height: 16px;
+    }
+    .price-pic{
+    height: auto;
+}
+    .section-description {
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 18px;
+    }
+    .top-padding-80 {
+  padding-top: 30px; }
+    .banner-section .banner-middle-content{
+        top: 40%;
+    }
+
+  .banner-section .banner-content .banner-description {
+      font-size: 14px;
+  }
+  .pricing-plan > .head > .plan-price{
+      font-size: 14px;
+      margin-bottom: -15px;
+  }
+  .pricing-plan {
+      width: 100%;
+  }
+  .banner-section .banner-content .banner-title {
+    line-height: 20px;
+      font-weight: 100;
+      font-size: 18px;
+  }
+  .pricing-plan > .content > ul.plan-feature > li {
+        font-size: 13px;
+        padding: 0; }
+
+  .section-padding3 {
+  padding: 50px 0; }
+  .section-title {
+    font-family: Intro;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+   #navigation.navigation-style-2 .site-navigation > li {
+       display: none;
+        }
+   #navigation.open .site-navigation > li {
+    display: block;
+   }
+   #navigation.navigation-style-2 .site-navigation > li > a {
+       color: #fff;
+   }
+    
+}
+@media (min-width: 736px) {
+    #navigation.navigation-style-2 .nav-header #nav-trigger {
+    display: none; }
+}
+
+body.nousware-body {
+    
     @media (min-width: 992px) {
         .col-md-20p {
             width: 20%;
