@@ -321,12 +321,12 @@
     <Content Include="Views\Home\_first_block.cshtml" />
     <Content Include="Views\Home\_Soft_world.cshtml" />
     <Content Include="Views\Home\_Features.cshtml" />
-    <Content Include="Views\Home\_Team.cshtml" />
+    <Content Include="Views\Home\_Video.cshtml" />
     <Content Include="Views\Home\_Team_01.cshtml" />
-    <Content Include="Views\Home\_Screenshot.cshtml" />
+    <Content Include="Views\Home\_System.cshtml" />
     <Content Include="Views\Home\_Price.cshtml" />
-    <Content Include="Views\Home\_Tech.cshtml" />
-    <Content Include="Views\Home\_Logos.cshtml" />
+    <Content Include="Views\Home\_Counter.cshtml" />
+    <Content Include="Views\Home\_Payment.cshtml" />
     <Content Include="Views\Home\_Contacts.cshtml" />
     <Content Include="Views\Home\_Footer.cshtml" />
     <Content Include="Views\Home\UserReg.cshtml" />
